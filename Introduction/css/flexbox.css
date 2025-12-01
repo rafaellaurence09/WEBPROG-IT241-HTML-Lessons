@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #e8f4ff;
+  background: #D3D3D3;
   text-align: center;          /* Centers inline elements & text */
   display: flex;
   flex-direction: column;
@@ -28,9 +28,8 @@ h1 {
   max-width: 1000px;           /* Prevents stretching too wide */
 }
 
-/* Box styling */
 .container div {
-  background-color: #f1f1f1;
+  background-color:#D3D3D3;
   width: 250px;
   padding: 20px;
   border-radius: 10px;
