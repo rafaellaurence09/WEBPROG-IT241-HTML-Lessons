@@ -2,16 +2,17 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #D3D3D3;
-  text-align: center;          /* Centers inline elements & text */
+  background: #1A1A1A; /* Dark gray background to complement the image */
+  color: #F1F1F1; /* Light gray text for contrast */
+  text-align: center; /* Centers inline elements & text */
   display: flex;
   flex-direction: column;
-  align-items: center;         /* Centers block elements */
+  align-items: center; /* Centers block elements */
 }
 
 /* Title */
 h1 {
-  color: #003366;
+  color: #FFD700; /* Gold color for title, to match money theme */
   margin-bottom: 20px;
 }
 
@@ -19,23 +20,25 @@ h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;     /* Centers flex items */
+  justify-content: center; /* Centers flex items */
   gap: 20px;
-  background-color: LightBlue;
+  background-color: #2C2C2C; /* Dark gray background for container */
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 1000px;           /* Prevents stretching too wide */
+  max-width: 1000px; /* Prevents stretching too wide */
 }
 
+/* Container box styling */
 .container div {
-  background-color:#D3D3D3;
+  background-color: #333333; /* Slightly lighter dark gray for the boxes */
   width: 250px;
   padding: 20px;
   border-radius: 10px;
   text-align: left;
   font-size: 18px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: #F1F1F1; /* Light gray text */
 }
 
 /* Box headings */
@@ -43,4 +46,22 @@ h1 {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
+  color: #FFD700; /* Gold text for headings */
+}
+
+/* Button Styling */
+button {
+  background-color: #FFD700; /* Gold color for buttons */
+  color: #1A1A1A; /* Dark text for buttons */
+  border: 2px solid #1A1A1A; /* Dark border around the button */
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFC300; /* Slightly lighter gold on hover */
 }
