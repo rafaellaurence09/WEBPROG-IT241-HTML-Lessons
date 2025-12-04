@@ -1,38 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="css/css-grid.css">
-<title>WEBPROG IT241</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to existing external CSS for flexbox layout -->
+    <link rel="stylesheet" href="css/flexbox.css"> 
+    <!-- Link to the newly separated custom styles -->
+    <link rel="stylesheet" href="style.css"> 
+    <title>WEBPROG IT241 | Rafael Laurence E. Martinez</title>
+    <!-- Tailwind CSS is kept for utility classes used directly in the body -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 
-<h1> My Personal Profile Web page - Rafael Laurence E. Martinez</h1>
-<p>
-About Me<br>
- ( Do not include birthdate / age / contact information)<br>
-Education / Achievements<br>
-Rizal Technological University <br>
-Course <br>
-IT Experience<br>
-Coding with Difference Programming Languages <br>
-Hobbies & Interests<br>
-- I play Basketball<br>
-- I play Videogames<br>
-- I like to drive motor and car
-Goals In Life / Dream<br>
-To graduate with degree in Bachelor of Science in Information Technology<br>
-Picture Gallery<br>
- <img src="https://cookco.us/news/wp-content/uploads/2023/08/cash-money.jpg" alt="Cash" width="500" height="600">
-</p>
+    <h1 class="text-3xl font-extrabold tracking-tight">Personal Profile Web Page - Rafael Laurence E. Martinez</h1>
 
-<div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>  
-</div> 
-    
+    <div class="container">
+        
+        <!-- About Me & Education Block (Combined from your original content) -->
+        <div>
+            <h2>About Me & Education</h2>
+            <p>
+                My name is Rafael Laurence E. Martinez. I am 20 years old. 
+                I am a 2nd year college student taking Bachelor of Science in Information Technology. 
+                Currently studying at Asia Pacific College.
+            </p>
+            
+            <h3 class="font-medium mt-4">Education / Achievements:</h3>
+            <ul>
+                <li>Rizal Technological University</li>
+            </ul>
+        </div>
+        
+        <!-- Course / IT Experience Block -->
+        <div>
+            <h2>Course & IT Experience</h2>
+            <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+            
+            <h3 class="font-medium mt-4">IT Experience:</h3>
+            <ul>
+                <li>Coding with different programming languages</li>
+            </ul>
+        </div>
+        
+        <!-- Hobbies & Interests Block -->
+        <div>
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>I play Basketball</li>
+                <li>I play Videogames</li>
+                <li>I like to drive motor and car</li>
+            </ul>
+        </div>
+        
+        <!-- Goals In Life / Dream Block -->
+        <div>
+            <h2>Goals In Life / Dream</h2>
+            <ul>
+                <li>To graduate with a degree in Bachelor of Science in Information Technology</li>
+            </ul>
+        </div>
+        
+        <!-- Picture Gallery Block -->
+        <div class="flex flex-col items-center">
+            <h2>Picture Gallery</h2>
+            <img 
+                src="https://cookco.us/news/wp-content/uploads/2023/08/cash-money.jpg" 
+                alt="Stack of Cash" 
+                class="w-full h-auto object-cover"
+                width="300" 
+                height="400"
+            >
+            <small class="text-gray-500 mt-2">Stack of Cash (Placeholder Image)</small>
+        </div>
+        
+    </div>
+
 </body>
 </html>
